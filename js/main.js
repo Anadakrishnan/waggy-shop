@@ -1,4 +1,4 @@
-// Database of Dogs
+
 const dogDatabase = [
   {
     id: 1,

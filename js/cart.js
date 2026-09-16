@@ -1,14 +1,14 @@
-// LocalStorage Cart Helper
+
 function getCartItems() {
   return JSON.parse(localStorage.getItem('cart')) || [];
 }
 
-// Save back to LocalStorage
+
 function saveCartItems(cart) {
   localStorage.setItem('cart', JSON.stringify(cart));
 }
 
-// Remove single item from cart
+
 function removeItem(index) {
   let cart = getCartItems();
   cart.splice(index, 1);
@@ -19,7 +19,7 @@ function removeItem(index) {
   }
 }
 
-// Render Cart Items
+
 function renderCart() {
   const container = document.getElementById('cart-items');
   const totalElem = document.getElementById('cart-total');
